@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la Mujer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('fondo.jpg') no-repeat center center/cover;
+            padding: 200px;
+        }
+        .mensaje {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .caja {
+            width: 100px;
+            height: 100px;
+            background-color: #ff4081;
+            position: relative;
+            margin: 20px auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+        .caja:before {
+            content: "";
+            width: 120px;
+            height: 30px;
+            background-color: #d81b60;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            border-radius: 5px;
+        }
+        .caja.abierta {
+            transform: scale(0);
+        }
+        .imagen {
+            display: none;
+            max-width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Día de la Mujer</h1>
+    <div class="mensaje">Querida hermana, eres una mujer increíble. ¡Disfruta tu día con amor y alegría!</div>
+    <div class="caja" onclick="abrirRegalo()"></div>
+    <img src="https://via.placeholder.com/200" class="imagen" id="imagen" style="display: none;">
+    <audio id="audio" src="tu_cancion.mp3"></audio>
+
+    <script>
+        function abrirRegalo() {
+            let caja = document.querySelector('.caja');
+            let imagen = document.getElementById('imagen');
+            let audio = document.getElementById('audio');
+            
+            caja.classList.add('abierta');
+            setTimeout(() => {
+                caja.style.display = 'none';
+                imagen.style.display = 'block';
+                audio.play();
+            }, 500);
+        }
+    </script>
+</body>
+</html>
+

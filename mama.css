@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('mami.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.container {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5); /* Blanco con 50% de transparencia */
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px; /* Opcional */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+
+
+h1 {
+    color: #d63384;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    transition: transform 3s;
+}
+
+.btn:hover {
+    background-color: #d63384;
+    transform: scale(1.2);
+}
+.mensaje {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: #ff4081;
+    position: relative;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.caja:before {
+    content: "";
+    width: 120px;
+    height: 30px;
+    background-color: #d81b60;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    border-radius: 5px;
+}
+.caja.abierta {
+    transform: scale(0);
+}
+.imagen {
+    display: none;
+    max-width: 200px;
+    margin: 20px auto;
+}

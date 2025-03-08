@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Mamicita</title>
+    <link rel="stylesheet" href="mama.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz Día de la Mujer Mamicitaaaa!</h1>
+        <p>Eres una persona super increible y especial, y le doy gracias a Dios</p>
+        <p>por darme a una Mamá tan increible y unica como lo eres <strong>TÚ.</strong></p>
+        <p>Gracias por todos y cada uno de los momentos que hemos compartido</p>
+        <p>gracias por seguir amandome a pesar de mis errores,</p>
+        <p>por quererme aun así te de dolores de cabeza y aveces no te haga caso</p>
+        <p>aunque no creas, trato de esforzarme todos los días para ser un mejor hijo</p>
+        <p><strong>Te quiero mucho Mamicita💗💞</strong></p>
+
+        
+        
+    </div>
+    
+    <div class="caja" onclick="abrirRegalo()"></div>
+    <img src="un_ramo_de_flores-removebg-preview.png" class="imagen" id="imagen" style="display: none;">
+    <audio id="audio" src="Gracias Mamá (Remix Repost) _ Casi Creativo [8Oj6y9Dkmuo]_[cut_12sec].mp3"></audio>
+
+    <script>
+        function abrirRegalo() {
+            let caja = document.querySelector('.caja');
+            let imagen = document.getElementById('imagen');
+            let audio = document.getElementById('audio');
+            
+            caja.classList.add('abierta');
+            setTimeout(() => {
+                caja.style.display = 'none';
+                imagen.style.display = 'block';
+                audio.play();
+            }, 500);
+        }
+    </script>
+    <a href="index.html" class="btn">Volver</a>
+</body>
+</html>
+

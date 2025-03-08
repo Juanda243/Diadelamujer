@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Papecita</title>
+    <link rel="stylesheet" href="hermana.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz Día de la Mujer, Hermana!</h1>
+        <p>Eres una personita muy increible y le doy gracias a Dios</p>
+        <p>por darme a una hermana tan increible y unica como lo eres <strong>TÚ.</strong></p>
+        <p>Gracias por todos y cada uno de los momentos que hemos compartido</p>
+        <p>Te quiero mucho🤍🤎, asi no lo demuestre me preocupas mucho</p>
+        <p>y día a día trato de esforzarme para ser mejor Hermano</p>
+
+        <p>Sabes que puedes contar conmigo en cada momento, <strong>Te quiero Mucho Papecita💕💖</strong></p>
+        
+    </div>
+    
+    <div class="caja" onclick="abrirRegalo()"></div>
+    <img src="un_ramo_de_flores_estilo_animado-removebg-preview.png" class="imagen" id="imagen" style="display: none;">
+    <audio id="audio" src="tu_cancion_[cut_12sec].mp3"></audio>
+
+    <script>
+        function abrirRegalo() {
+            let caja = document.querySelector('.caja');
+            let imagen = document.getElementById('imagen');
+            let audio = document.getElementById('audio');
+            
+            caja.classList.add('abierta');
+            setTimeout(() => {
+                caja.style.display = 'none';
+                imagen.style.display = 'block';
+                audio.play();
+            }, 500);
+        }
+    </script>
+    <a href="index.html" class="btn">Volver</a>
+</body>
+</html>

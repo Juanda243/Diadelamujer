@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url(mimamiyangela.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+   
+}
+
+.container {
+    padding: 50px;
+}
+
+h1 {
+    color: #d63384;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    transition: transform 3s;
+}
+
+.btn:hover {
+    background-color: #d63384;
+    transform: scale(1.1);
+}
